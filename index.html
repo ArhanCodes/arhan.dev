@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Arhan</title>
+</head>
+<body>
+ <div class="centered">
+  <div class="brand">
+   <div class="name">Arhan</div>
+   <div class="subtitle">Backend Developer</div>
+  </div>
+  <div class="socials">
+   <a target="_blank" href="https://github.com/ArhanCodes" tooltip="ArhanCodes"><img src="githubblack.png"></a>
+   <a target="_blank" href="mailto:arhan@peakseducation.com" tooltip="arhan@peakseducation.com"><img src="mail.png"></a>
+  </div>
+  <div class="projects">
+   <div class="title">Projects and more coming soon</div>
+   <div class="check-out">Make sure to check out my newest project: <a target="_blank" href="https://tradebuddy.xyz">https://tradebuddy.xyz</a></div>
+  </div>
+ </div>
+</body>
+</html>
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
+
+ * {
+  font-family: Raleway, 'sans-serif';
+ }
+
+ :root {
+  font-family: Raleway, 'sans-serif';
+ }
+
+ body {
+  background: lightgray;
+  width: 100%;
+ }
+
+ div.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+ }
+
+ div.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+ }
+
+ div.name {
+  font-size: 7em;
+  font-weight: bold;
+ }
+
+ div.subtitle {
+  font-size: 2em;
+  opacity: 70%;
+  letter-spacing: .1em;
+  text-align: center;
+ }
+
+ div.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5px;
+  background: rgba(0, 0, 0, 0.07);
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.2em;
+  text-align: center;
+  width: 80%;
+  max-width: 500px;
+ }
+
+ div.projects div.title {
+  font-weight: bold;
+  font-size: 1.1em;
+ }
+
+ div.socials {
+  display: flex;
+  column-gap: 20px;
+ }
+
+ div.socials a {
+  position: relative;
+ }
+
+ div.socials a:hover::before {
+  color: #fff;
+  background: #000;
+  content: attr(tooltip);
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  animation: fadeIn .5s ease;
+  padding: 5px;
+  border-radius: 5px;
+ }
+
+ div.socials img {
+  width: 35px;
+  height: 35px;
+ }
+
+ div.socials img.mail {
+  border-radius: 10px;
+ }
+
+ div.check-out {
+  margin-top: 10px;
+  font-weight: bold;
+ }
+
+ div.check-out a {
+  color: #0059ff;
+ }
+
+ @keyframes fadeIn {
+  0% {
+   opacity: 0%;
+   transform: translateX(-50%) translateY(5px);
+  }
+  100% {
+   opacity: 100%;
+  }
+ }
+</style>
